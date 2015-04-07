@@ -4,8 +4,39 @@
 
 
 .chirp {
-	background-color: cyan;
-	padding: 10px;
+	background-color: #f5f5f5;
+	padding: 10px 10px 10px 10px;
 	margin: 10px auto;
 	width: 600px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.chirp .content {
+	margin-top: 3px;
+	font-size: 1.1em;
+}
+
+.chirp .date {
+	float: right;
+}
+
+.chirp .user {
+	font-weight: bolder;
+	letter-spacing: .05em;
+	margin-top: 0;
+	display:inline;
+}
+.chirp .handle {
+	padding-left: 5px;
+	color: #6a527a;
+}
+
+.chirp .avatar {
+	border-radius: 2px;
+	width: 80px;
+	height: 80px;
+	background-image: url('http://i.imgur.com/zGTZPJ9.jpg');
+	float: left;
+	margin-right: 10px;
 }
