@@ -1,0 +1,9 @@
+<h1>All the chirps!</h1>
+
+<% @chirps.each do |chirp| %>
+	<div class="chirp">
+	<div class="content"><%= chirp.content %></div>
+	<div class="content"><%= chirp.created_at.to_formatted_s(:long_ordinal) %></div>
+	<div class="content"><%= chirp.user %></div>
+	</div>
+<% end %>
