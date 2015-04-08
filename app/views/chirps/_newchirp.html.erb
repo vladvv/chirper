@@ -1,0 +1,8 @@
+<div class="chirp">
+	<%= form_for @newchirp do |f| %>
+		<%= f.text_area :content, placeholder: 'Chirp be churpin yeyeyeye', maxlength: '141', autocomplete: 'off' %>
+
+		<%= f.submit 'Chirpy Churp' %>	
+		<span id="charsleft">141</span>
+	<% end %>
+</div>

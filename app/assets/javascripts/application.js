@@ -14,3 +14,19 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$().ready(function () {
+	$charsleft = $('#charsleft');
+	$chirp_content = $('#chirp_content')
+	$chirp_content.on('input', function(){
+		calcCharsLeft = 141 - $chirp_content.val().length;
+		$charsleft.html(calcCharsLeft)
+	});
+
+	// $('#avatarselect input:radio').addClass('input_hidden');
+	$('#avatarselect label').click( function () {
+		$(this).addClass('selected').siblings().removeClass('selected');
+	})
+
+});
+

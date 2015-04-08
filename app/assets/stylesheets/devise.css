@@ -1,0 +1,26 @@
+#avatarselect {
+	width: 580px;
+	margin: 15px 0;
+}
+
+.input_hidden {
+
+}
+
+.selected {
+	background-color: #ccc;
+}
+
+#avatarselect label {
+	display: inline-block;
+	cursor: pointer;
+}
+
+#avatarselect label img {
+	padding: 3px;
+}
+
+.avatarselect {
+position: absolute;
+left: -9999px;
+}

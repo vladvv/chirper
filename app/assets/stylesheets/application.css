@@ -38,10 +38,22 @@ body {
 
 }
 
+
 #topbar h1 {
 	font-size: 3em;
 	margin: 0px;
+	position: absolute;
+	left: 45%;
 	padding-top: 0px;
-	color: #fb70aa;
 	text-shadow: 1px 1px #46285a;
+}
+
+#login {
+	float: right;
+	margin: 10px;
+}
+
+#bigtitle a {
+	text-decoration: none;
+	color: #fb70aa;
 }

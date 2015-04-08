@@ -1,12 +1,20 @@
-<% @chirps.each do |chirp| %>
-	<div class="chirp">
-		<!-- <div class="date"><%= chirp.created_at.to_formatted_s(:long_ordinal) %></div> -->
-		<div class="date"><%= chirp.nicedate %></div>
-		<div class="avatar"></div>
 
-		<h3 class="user"><%= chirp.user %></h3>
-		<span class="handle">@<%= chirp.user.handle %></span>
-		<div class="content"><%= chirp.content %></div>
 
-	</div>
-<% end %>
+	<%= render 'newchirp' %>
+
+
+	<% @chirps.each do |chirp| %>
+		<div class="chirp">
+			<div class="avatar">
+				<%= image_tag( "avatar#{chirp.user.avatarid}.jpg", class: :avatar) %>
+			</div>
+
+			<div class="chirptext">
+				<div class="date"><%= chirp.nicedate %></div>
+				<h3 class="user"><%= chirp.user %></h3>
+				<span class="handle">@<%= chirp.user.handle %></span>
+				<div class="content"><%= chirp.content %></div>
+			</div>
+		</div>
+	<% end %>
+
